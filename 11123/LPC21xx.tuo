@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioOptions Version="3.00" Author="YinHandong[Òüº®¶¬]">
+    <Projects OPTPES="96,96,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,">
+        <Project ProjectGUID="{41383200-7B4E-430a-85BB-244E193256D7}" Name="LPC21xx" ACTCFG="FlashRel">
+            <TARGOPT Name="FlashRel" OPTDF="0">
+                <OPTFFF VAL="&lt;.\src\main.c&gt; {2,3,-1,-1,22,22,1018,292,0,171}" />
+                <OPTFFF VAL="&lt;.\src\lib_act.c&gt; {0,1,-1,-1,22,22,1018,292,72,1023}" />
+                <OPTFFF VAL="&lt;.\src\lib_irq.c&gt; {0,1,-1,-1,22,22,1018,292,18,909}" />
+            </TARGOPT>
+        </Project>
+    </Projects>
+</TKStudioOptions>

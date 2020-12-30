@@ -1,0 +1,21 @@
+#include”config.h”
+#include”lib_io.h”
+#include”lib_arm.h”
+
+int main(void)
+{
+  int i=0
+ Initial_ARM()
+
+ while
+ {
+  Servo(1,i*10);
+ i++;
+ if(i>18) i=0;
+LedIn(1,2);
+Delay(2000);
+ LedIn(1,0);
+ Delay(500);
+}
+return(1);
+}

@@ -67,7 +67,16 @@ Servo(1,175); //两侧轮反向转动，使擂台小车原地转向
 Servo(3,175);
 Servo(2,175);
 Servo(4,175);
-DelayNS(1000); //转动一定角度
+DelayNS(100000); //转动一定角度
+flag=1;
+}
+else if(Input(4,1)==0) //输入端口4的黑标传感器检测到黑标
+{
+Servo(1,90);
+Servo(2,90);
+Servo(3,90);
+Servo(4,90);
+DelayNS(1000);
 flag=1;
 }
 if(flag==1) //擂台小车寻找黑点模式

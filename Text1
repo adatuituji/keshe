@@ -1,0 +1,147 @@
+#include "config.h" 
+#include "lib_io.h"
+#include "lib_arm.h"
+void qian(void)
+ {
+  Servo(1,0);
+  Servo(2,0);
+  Servo(5,180);
+  Servo(6,180);
+ }
+ void zuo(void)
+ {
+  Servo(1,180);
+  Servo(2,180);
+  Servo(5,180);
+  Servo(6,180);
+ }
+ 
+ void you(void)
+ {
+  Servo(1,0);
+  Servo(2,0);
+  Servo(5,0);
+  Servo(6,0);
+ }
+
+ void hou(void)
+ {
+  Servo(1,180);
+  Servo(2,180);
+  Servo(5,0);
+  Servo(6,0);
+ }
+
+ void jinquan(void)
+ {
+  Servo(1,0);
+  Servo(2,0);
+  Servo(5,180);
+  Servo(6,180);
+  Delay(650);
+ }
+int main(void)
+{
+
+ int i;
+ i=1;
+ Initial_ARM();
+ while(1)
+ {
+  while (i==0)
+  {
+  Servo(1,90);
+  Servo(2,90);
+  Servo(3,90);
+  Servo(4,90);
+  if((Input(2,1)==0)||(Input(3,1)==0))
+    {
+    if ((Input(2,1)==0)&&(Input(3,1)==1))
+    {
+     LedIn(2,0);
+     LedIn(3,1);
+     hou();
+     Delay(200);
+     you();
+     Delay(100);
+    }
+    else if ((Input(2,1)==1)&&(Input(3,1)==0))
+    {
+     LedIn(2,1);
+     LedIn(3,0);
+     hou();
+     Delay(200);
+     zuo();
+     Delay(100);
+
+    }
+    else if ((Input(2,1)==1)&&(Input(3,1)==1))
+    {
+     Servo(1,90);
+     Servo(2,90);
+     Servo(3,90);
+     Servo(4,90);
+    }
+    else if ((Input(2,1)==0)||(Input(3,1)==0))
+    {
+     i=1;
+    }
+   }
+  }
+ 
+ while (i==1)
+ {
+  if((Input(1,1)==1)&&(Input(4,1)==1))
+  {
+   LedIn(1,1);
+   LedIn(4,1);
+   if((Input(2,1)==1)&&(Input(3,1)==1))
+   {
+    LedIn(2,1);
+    LedIn(3,1);
+    jinquan();
+    i=0;
+   }
+   else if((Input(2,1)==0)&&(Input(3,1)==1))
+   {
+    LedIn(2,0);
+    LedIn(3,1);
+    you();
+    Delay(50);
+   }
+   else if((Input(2,1)==1)&&(Input(3,1)==0))
+   {
+    LedIn(2,1);
+    LedIn(3,1);
+    zuo();
+    Delay(50);
+   }
+   else if((Input(2,1)==0)&&(Input(3,1)==0))
+   {
+    LedIn(2,0);
+    LedIn(3,0);
+    qian();
+    Delay(50);
+   }
+  }
+  else if((Input(1,1)==1)&&(Input(4,1)==0))
+  {
+   LedIn(1,1);
+   LedIn(4,0);
+   hou();
+   Delay(1000);
+   zuo();
+   Delay(1500);
+  }
+  else if((Input(1,1)==0)&&(Input(4,1)==1))
+  {
+   LedIn(1,0);
+   LedIn(4,1);
+   hou();
+   Delay(1000);
+   you();
+   Delay(1500);
+  }
+  else if((Input(1,1)==0)&&(Input(4,1)==0))
+   {
+   

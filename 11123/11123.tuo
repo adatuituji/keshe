@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <TKStudioOptions Version="3.00" Author="YinHandong[Òüº®¶¬]">
-    <Projects />
+    <Projects OPTPES="98,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,">
+        <Project ProjectGUID="{41383200-7B4E-430a-85BB-244E193256D7}" Name="11123" ACTCFG="FlashRel">
+            <TARGOPT Name="FlashRel" OPTDF="0">
+                <OPTFFF VAL="&lt;.\src\main.c&gt; {0,1,-1,-1,0,0,1214,480,0,81}" />
+            </TARGOPT>
+        </Project>
+    </Projects>
 </TKStudioOptions>

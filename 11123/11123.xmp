@@ -1,90 +1,54 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
-<TKStudioProject Name="LPC21xx" BuildTool="13" Version="3.00" Author="YinHandong[Òüº®¶¬]" ProjectGUID="{41383200-7B4E-430a-85BB-244E193256D7}">
+<TKStudioProject Name="11123" BuildTool="13" Version="3.00" Author="YinHandong[Òüº®¶¬]" ProjectGUID="{41383200-7B4E-430a-85BB-244E193256D7}" ToolVer="">
     <Configurations>
         <Configuration Name="DebugRel" ADS_AsmParam='$(ADS_PARAM) &quot;$(SOURCE)&quot; &quot;$(OBJ)&quot;' ADS_CParam='$(ADS_PARAM) -c &quot;$(SOURCE)&quot; -o &quot;$(OBJ)&quot;' ADS_LinkParam='$(OBJS) $(ADS_LNKPARAM) -o &quot;$(ELF)&quot;' ADS_OPTDBG='1,RDI 0,1,0,1,0,(&quot;&quot;)' ADS_OUTPUT_DIR="{Project}" ADS_LinkerName="ARM Linker" ADS_FileMap="(.s@armasm),(.c@armcc),(.cc&amp;&amp;.cpp@armcpp)" ADS_USRAPPFILE="" ADS_LNKPARAM=" -scatter .\ld\mem_b.scf -entry 0x40000000" AppFile=".\DebugRel\LPC21xx.axf" ADS_GArmAsmParam=" -keep -split_ldm -g" ADS_GArmCCParam=" -O0 -g+ -D__DEBUG_RAM" ADS_GArmCppParam=" -O0 -g+" ADS_GThmCCParam=" -O0 -g+" ADS_GThmCppParam=" -O0 -g+" ADS_FromELFParam=" -elf" ADS_PostLnk="None" UpdateTgtBeforeDbg="1" ServeDebugOptions="" OPTDBG='1,-1,1,0,1,0,(&quot;&quot;)' DEVICE="LPC2148" VENDOR="NXP (founded by Philips)" FAMINY="3" CPU="IRAM(0x40000000-0x40007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" RGF='LPC214X.H(&quot;Philips&quot;)' MONDL='SARM.DLL(&quot;&quot;) TARMP.DLL(&quot;-pLPC2148&quot;)' SIMDL='SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2148&quot;)' SIMCLK="12.000000" InitScriptForSim="" InitScriptForEmu="" ADS_BatchFileParam="" SearchPath="">
             <DeviceProperties Item0='BOOK0=DATASHTS\PHILIPS\LPC2141_42_44_46_48.PDF(&quot;Data Sheet&quot;)' Item1="FLDLL=UL2ARM(-U268761108 -O7 -C0 -FO15 -FD40000000 -FC800 -FN1 -FF0LPC_IAP2_512 -FS00 -FL07D000)" Item2='MON=SARM.DLL(&quot;-pLPC21xx&quot;) TARMP.DLL(&quot;-pLPC2148&quot;)' Item3='REGFILE=LPC214X.H(&quot;Philips&quot;)' Item4='SFILE=&quot;STARTUP\Philips\Startup.s&quot; (&quot;Philips LPC2100 Startup Code&quot;)' Item5='SIM=SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2148&quot;)' Item6='FLASH=LPC210x_ISP.EXE (&quot;#H&quot; ^X $D COM1: 38400 1)' Item7='BOOK1=DATASHTS\PHILIPS\user_manual_LPC214x.pdf(&quot;User Manual&quot;)' Item8="CPU=IRAM(0x40000000-0x40007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" />
             <DeviceDescription Description="ARM7TDMI-S based high-performance 32-bit RISC Microcontroller with Thumb extensions &#x0D;&#x0A;512KB on-chip Flash ROM with In-System Programming (ISP) and In-Application Programming (IAP), 32KB RAM,  Vectored Interrupt Controller, &#x0D;&#x0A;Two 10bit ADCs with 14 channels,  USB 2.0  Full Speed Device Controller,&#x0D;&#x0A;Two UARTs, one with full modem interface.&#x0D;&#x0A;Two I2C serial interfaces, Two SPI serial interfaces&#x0D;&#x0A;Two 32-bit timers,  Watchdog Timer, PWM unit, &#x0D;&#x0A;Real Time Clock with optional battery backup,&#x0D;&#x0A;Brown out detect circuit&#x0D;&#x0A;General purpose I/O pins.&#x0D;&#x0A;CPU clock up to 60 MHz, On-chip crystal oscillator and On-chip PLL" />
         </Configuration>
-        <Configuration Name="FlashRel" ADS_AsmParam='$(ADS_PARAM) &quot;$(SOURCE)&quot; &quot;$(OBJ)&quot;' ADS_CParam='$(ADS_PARAM) -c &quot;$(SOURCE)&quot; -o &quot;$(OBJ)&quot;' ADS_LinkParam='$(OBJS) $(ADS_LNKPARAM) -o &quot;$(ELF)&quot;' ADS_OPTDBG='1,RDI 0,1,0,1,0,(&quot;&quot;)' ADS_OUTPUT_DIR="{Project}" ADS_LinkerName="ARM Linker" ADS_FileMap="(.s@armasm),(.c@armcc),(.cc&amp;&amp;.cpp@armcpp)" ADS_USRAPPFILE="" ADS_LNKPARAM=' -scatter &quot;.\ld\mem_a.scf&quot; -entry 0x00000000' AppFile=".\FlashRel\LPC21xx.axf" ADS_GArmAsmParam=" -keep -split_ldm -g" ADS_GArmCCParam=" -O0 -g+ -D__IN_CHIP" ADS_GArmCppParam=" -O0 -g+" ADS_GThmCCParam=" -O0 -g+" ADS_GThmCppParam=" -O0 -g+" ADS_FromELFParam=' -i32 -output &quot;robotway.hex&quot;' ADS_PostLnk="ARM fromELF" UpdateTgtBeforeDbg="1" ServeDebugOptions="" InitScriptForSim="" InitScriptForEmu="" OPTDBG='1,-1,1,0,1,0,(&quot;&quot;)' DEVICE="LPC2138" VENDOR="NXP (founded by Philips)" FAMINY="3" CPU="IRAM(0x40000000-0x40007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" RGF='LPC214X.H(&quot;Philips&quot;)' MONDL='SARM.DLL(&quot;&quot;) TARMP.DLL(&quot;-pLPC2148&quot;)' SIMDL='SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2148&quot;)' SIMCLK="12.000000" ADS_BatchFileParam="0,()" SearchPath="">
-            <DeviceProperties Item0='FLASH=LPC210x_ISP.EXE (&quot;#H&quot; ^X $D COM1: 38400 1)' Item1="FLDLL=UL2ARM(-U268761108 -O7 -C0 -FO15 -FD40000000 -FC800 -FN1 -FF0LPC_IAP2_512 -FS00 -FL07D000)" Item2='MON=SARM.DLL(&quot;-pLPC21xx&quot;) TARMP.DLL(&quot;-pLPC2138&quot;)' Item3="CPU=IRAM(0x40000000-0x40007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" Item4='REGFILE=LPC213X.H(&quot;Philips&quot;)' Item5='SFILE=&quot;STARTUP\Philips\Startup.s&quot; (&quot;Philips LPC2100 Startup Code&quot;)' Item6='SIM=SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2138&quot;)' Item7='BOOK0=DATASHTS\PHILIPS\LPC2131_32_34_36_38.PDF(&quot;Data Sheet&quot;)' />
-            <DeviceDescription Description="ARM7TDMI-S based high-performance 32-bit RISC Microcontroller with Thumb extensions &#x0D;&#x0A;512KB on-chip Flash ROM with In-System Programming (ISP) and In-Application Programming (IAP),  Two 8-ch 10bit ADC&#x0D;&#x0A;32KB RAM, Vectored Interrupt Controller, &#x0D;&#x0A;Two UARTs, one with full modem interface.&#x0D;&#x0A;Two I2C serial interfaces, Two SPI serial interfaces&#x0D;&#x0A;Three 32-bit timers,  Watchdog Timer,&#x0D;&#x0A;Real Time Clock with optional battery backup,&#x0D;&#x0A;Brown out detect circuit&#x0D;&#x0A;General purpose I/O pins.&#x0D;&#x0A;CPU clock up to 60 MHz, On-chip crystal oscillator and On-chip PLL" />
+        <Configuration Name="FlashRel" ADS_AsmParam='$(ADS_PARAM) &quot;$(SOURCE)&quot; &quot;$(OBJ)&quot;' ADS_CParam='$(ADS_PARAM) -c &quot;$(SOURCE)&quot; -o &quot;$(OBJ)&quot;' ADS_LinkParam='$(OBJS) $(ADS_LNKPARAM) -o &quot;$(ELF)&quot;' ADS_OPTDBG='1,RDI 0,1,0,1,0,(&quot;&quot;)' ADS_OUTPUT_DIR="{Project}" ADS_LinkerName="ARM Linker" ADS_FileMap="(.s@armasm),(.c@armcc),(.cc&amp;&amp;.cpp@armcpp)" ADS_USRAPPFILE="" ADS_LNKPARAM=' -scatter &quot;.\ld\mem_a.scf&quot; -entry 0x00000000' AppFile=".\FlashRel\11123.axf" ADS_GArmAsmParam=" -keep -split_ldm -g" ADS_GArmCCParam=" -O0 -g+ -D__IN_CHIP" ADS_GArmCppParam=" -O0 -g+" ADS_GThmCCParam=" -O0 -g+" ADS_GThmCppParam=" -O0 -g+" ADS_FromELFParam=' -i32 -output &quot;E:\GitHub\keshe\1221212.hex&quot;' ADS_PostLnk="ARM fromELF" UpdateTgtBeforeDbg="1" ServeDebugOptions="" InitScriptForSim="" InitScriptForEmu="" OPTDBG='1,-1,1,0,1,0,(&quot;&quot;)' DEVICE="LPC2148" VENDOR="NXP (founded by Philips)" FAMINY="3" CPU="IRAM(0x40000000-0x40007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" RGF='LPC214X.H(&quot;Philips&quot;)' MONDL='SARM.DLL(&quot;&quot;) TARMP.DLL(&quot;-pLPC2148&quot;)' SIMDL='SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2148&quot;)' SIMCLK="12.000000" ADS_BatchFileParam="0,()" SearchPath="" ADS_ReBuild="0">
+            <DeviceProperties Item0='BOOK0=DATASHTS\PHILIPS\LPC2141_42_44_46_48.PDF(&quot;Data Sheet&quot;)' Item1="FLDLL=UL2ARM(-U268761108 -O7 -C0 -FO15 -FD40000000 -FC800 -FN1 -FF0LPC_IAP2_512 -FS00 -FL07D000)" Item2='MON=SARM.DLL(&quot;-pLPC21xx&quot;) TARMP.DLL(&quot;-pLPC2148&quot;)' Item3='REGFILE=LPC214X.H(&quot;Philips&quot;)' Item4='SFILE=&quot;STARTUP\Philips\Startup.s&quot; (&quot;Philips LPC2100 Startup Code&quot;)' Item5='SIM=SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2148&quot;)' Item6='FLASH=LPC210x_ISP.EXE (&quot;#H&quot; ^X $D COM1: 38400 1)' Item7='BOOK1=DATASHTS\PHILIPS\user_manual_LPC214x.pdf(&quot;User Manual&quot;)' Item8="CPU=IRAM(0x40000000-0x40007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" />
+            <DeviceDescription Description="ARM7TDMI-S based high-performance 32-bit RISC Microcontroller with Thumb extensions &#x0D;&#x0A;512KB on-chip Flash ROM with In-System Programming (ISP) and In-Application Programming (IAP), 32KB RAM,  Vectored Interrupt Controller, &#x0D;&#x0A;Two 10bit ADCs with 14 channels,  USB 2.0  Full Speed Device Controller,&#x0D;&#x0A;Two UARTs, one with full modem interface.&#x0D;&#x0A;Two I2C serial interfaces, Two SPI serial interfaces&#x0D;&#x0A;Two 32-bit timers,  Watchdog Timer, PWM unit, &#x0D;&#x0A;Real Time Clock with optional battery backup,&#x0D;&#x0A;Brown out detect circuit&#x0D;&#x0A;General purpose I/O pins.&#x0D;&#x0A;CPU clock up to 60 MHz, On-chip crystal oscillator and On-chip PLL" />
         </Configuration>
     </Configurations>
     <Files>
-        <Filter Name="Source Files">
-            <File RelativePath=".\src\main.c" FileType="1" Output="main.o">
-                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\lib_act.h" />
-                <Header RelativePath=".\src\lib_arm.h" />
-                <Header RelativePath=".\src\lib_io.h" />
-                <Header RelativePath=".\src\lib_io_uart_lpc2138.h" />
-                <Header RelativePath=".\src\target.h" />
-            </File>
-            <File RelativePath=".\src\lib_irq.c" FileType="1" Output="lib_irq.o">
-                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\amarino.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\lib_act.h" />
-                <Header RelativePath=".\src\lib_arm.h" />
-                <Header RelativePath=".\src\lib_io.h" />
-                <Header RelativePath=".\src\lib_io_uart_lpc2138.h" />
-                <Header RelativePath=".\src\target.h" />
-            </File>
-            <File RelativePath=".\src\lib_arm.c" FileType="1" Output="lib_arm.o">
-                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\lib_io.h" />
-                <Header RelativePath=".\src\target.h" />
-            </File>
-            <File RelativePath=".\src\lib_io.c" FileType="1" Output="lib_io.o">
-                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\lib_irq.h" />
-                <Header RelativePath=".\src\target.h" />
-            </File>
-            <File RelativePath=".\src\lib_act.c" FileType="1" Output="lib_act.o">
-                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\lib_arm.h" />
-                <Header RelativePath=".\src\lib_io.h" />
-                <Header RelativePath=".\src\target.h" />
-            </File>
-            <File RelativePath=".\src\lib_io_uart_lpc2138.c" FileType="1" Output="lib_io_uart_lpc2138.o">
-                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\lib_irq.h" />
-                <Header RelativePath=".\src\target.h" />
-            </File>
-            <File RelativePath=".\src\perception.c" FileType="1" Output="perception.o">
+        <Filter Name="Source Files" LocalConfigure="0">
+            <File RelativePath=".\src\main.c" FileType="1" Output="main.o" LocalConfigure="0">
                 <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
             </File>
-            <File RelativePath=".\src\amarino.c" FileType="1" Output="amarino.o">
+            <File RelativePath=".\src\lib_irq.c" FileType="1" Output="lib_irq.o" LocalConfigure="0">
+                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
+            </File>
+            <File RelativePath=".\src\lib_arm.c" FileType="1" Output="lib_arm.o" LocalConfigure="0">
+                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
+            </File>
+            <File RelativePath=".\src\lib_io.c" FileType="1" Output="lib_io.o" LocalConfigure="0">
+                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
+            </File>
+            <File RelativePath=".\src\lib_act.c" FileType="1" Output="lib_act.o" LocalConfigure="0">
+                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
+            </File>
+            <File RelativePath=".\src\lib_io_uart_lpc2138.c" FileType="1" Output="lib_io_uart_lpc2138.o" LocalConfigure="0">
+                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
+            </File>
+            <File RelativePath=".\src\perception.c" FileType="1" Output="perception.o" LocalConfigure="0">
+                <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
+            </File>
+            <File RelativePath=".\src\amarino.c" FileType="1" Output="amarino.o" LocalConfigure="0">
                 <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
             </File>
         </Filter>
-        <Filter Name="System Files">
-            <File RelativePath=".\src\target.c" FileType="1" Output="target.o">
+        <Filter Name="System Files" LocalConfigure="0">
+            <File RelativePath=".\src\target.c" FileType="1" Output="target.o" LocalConfigure="0">
                 <ADS_CParam Name="ADS_CfgFlag" DebugRel=" -O0 -g+ -D__DEBUG_RAM" DebugRel_tool="2" FlashRel=" -O0 -g+ -D__IN_CHIP" FlashRel_tool="2" />
-                <Header RelativePath=".\src\LPC2294.h" />
-                <Header RelativePath=".\src\config.h" />
-                <Header RelativePath=".\src\target.h" />
-                <Header RelativePath="C:\Program Files\ARM\ADSv1_2\Include\rt_sys.h" />
             </File>
-            <File RelativePath=".\src\IRQ.s" FileType="2" Output="IRQ.o">
+            <File RelativePath=".\src\IRQ.s" FileType="2" Output="IRQ.o" LocalConfigure="0">
                 <ADS_AsmParam Name="ADS_CfgFlag" DebugRel=" -keep -split_ldm -g" DebugRel_tool="1" FlashRel=" -keep -split_ldm -g" FlashRel_tool="1" />
             </File>
-            <File RelativePath=".\src\Startup.s" FileType="2" Output="Startup.o">
+            <File RelativePath=".\src\Startup.s" FileType="2" Output="Startup.o" LocalConfigure="0">
                 <ADS_AsmParam Name="ADS_CfgFlag" DebugRel=" -keep -split_ldm -g" DebugRel_tool="1" FlashRel=" -keep -split_ldm -g" FlashRel_tool="1" />
             </File>
         </Filter>
-        <Filter Name="Header Fiels">
+        <Filter Name="Header Fiels" LocalConfigure="0">
             <File RelativePath=".\src\target.h" FileType="4" />
             <File RelativePath=".\src\config.h" FileType="4" />
             <File RelativePath=".\src\LPC21xx.h" FileType="4" />
@@ -96,7 +60,7 @@
             <File RelativePath=".\src\amarino.h" FileType="4" />
             <File RelativePath=".\src\perception.h" FileType="4" />
         </Filter>
-        <Filter Name="Ld Files">
+        <Filter Name="Ld Files" LocalConfigure="0">
             <File RelativePath=".\ld\mem_a.scf" FileType="5" />
             <File RelativePath=".\ld\mem_b.scf" FileType="5" />
             <File RelativePath=".\ld\mem_c.scf" FileType="5" />
